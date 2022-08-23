@@ -106,6 +106,13 @@ input {
 
 }
 
+input:focus {
+    border: solid 1px transparent;
+    border-image: linear-gradient(to right, var(--linearGradientStart), var(--linearGradientEnd));
+    border-image-slice: 1;
+   /*FALTA ADICIONAR BORDA ARRENDODADA NO FOCUS*/
+}
+
 .date {
     width: 50%;
 }
@@ -169,6 +176,50 @@ input {
     border: solid 1px var(--red);
 }
 
+.complete-page {
+    margin-left: 25em;
+
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.complete-page img {
+    width: 4em;
+}
+
+.thank-you {
+    
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.complete-message {
+    color: var(--darkGrayishViolet);
+    font-size: 0.8em;
+}
+
+.continue-button {
+    background-color: var(--veryDarkViolet);
+    color: var(--white);
+    width: 100%;
+
+    height: 3em;
+    border-radius: 0.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2em;
+} 
+
+.continue-button:hover {
+    cursor: pointer;
+}
 .mobile-background {
     display: none;
 }
