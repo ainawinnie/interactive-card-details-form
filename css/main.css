@@ -1,3 +1,174 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-background {
+    width: 25em;
+    height: 100vh;
+}
+
+.credit-card {
+    position: absolute;
+    color: var(--white);
+    
+    padding-top: 10em;
+    padding-left: 6em;
+    height: 50em;
+}
+
+.card-front-img {
+    width: 20em;
+}
+
+
+.card-front-information {
+    margin-top: -5em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    width: 20em;
+}
+
+.card-logo {
+    position: absolute;
+    margin-left: -18em;
+    margin-top: 1em;
+
+    width: 3em;
+}
+
+
+
+.card-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 1em;
+
+    font-size: 1.2em;
+    width: 15em;
+}
+
+.card-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 20em;
+    padding-top: 1.5em;
+
+    font-size: 0.8em;
+}
+
+.card-back {
+    padding-top: 5em;
+    padding-left: 5em;
+}
+
+.card-back img {
+    width: 20em;
+}
+
+.card-back-information {
+    width: 2em;
+    margin-left: 20em;
+    margin-top: -8em;
+
+    font-size: 0.8em;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    text-transform: uppercase;
+
+    font-size: 0.7em;
+    font-weight: bold;
+
+    margin-bottom: 0.2em;
+    margin-top: 2em;
+}
+
+input {
+    height: 2.5em;
+    width: 100%;
+
+    border: solid 1px var(--darkGrayishViolet);
+    border-radius: 0.3em;
+
+}
+
+.date {
+    width: 50%;
+}
+
+.date-input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 50%;
+
+}
+
+.month, .year {
+    width: 48%;
+}
+
+.year {
+    margin-left: -20em;
+}
+
+.cvc-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 25em;
+}
+
+.form-data {
+    margin-left: 20em;
+}
+
+.send-button {
+    background-color: var(--veryDarkViolet);
+    color: var(--white);
+    width: 100%;
+
+    height: 3em;
+    border-radius: 0.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2em;
+} 
+
+.send-button:hover {
+    cursor: pointer;
+}
+
+.error-id {
+    color: var(--red);
+    font-size: 0.5em;
+
+    margin-top: 0.5em;
+}
+
+.input-error {
+    border: solid 1px var(--red);
+}
+
 .mobile-background {
     display: none;
 }
