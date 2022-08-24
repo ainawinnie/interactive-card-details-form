@@ -17,6 +17,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <!--JS-->
+  <script src="./js/script.js" defer></script>
 </head>
 <body>
   <main class="container">
@@ -46,16 +49,19 @@
       </div>
     </section>
  
+
     <section class="form-data">
       <form action="" class="user-information">
-        <div class="user-name form-field">
-          <label for="" class="name-label">Cardholder Name</label>
+        <div class="user-name form-field" >
+          <label for="" class="name-label" id="name-label">Cardholder Name</label>
           <input type="text" class="name-input" id="name-input" placeholder="e.g. Jane Appleseed">
+          <span class="name-error error-id hide">Can't be blank</span>
         </div>
         <div class="card-number-input form-field">
           <label for="" class="card-number-label">Card Number</label>
           <input type="text" class="card-number-input" id="card-number-input" placeholder="e.g. 1234 5678 9123 0000">
           <span class="number-error error-id hide">Wrong format, numbers only</span>
+          <span class="empty-number error-id hide">Can't be blank</span>
         </div>
         <div class="cvc-date">
           <div class="date form-field">
@@ -72,7 +78,7 @@
             <span class="cvc-error error-id hide">Can't be blank</span>
           </div>
         </div>
-        <div class="send-button" id="send-button">Confirm</div>
+        <button class="send-button" id="send-button">Confirm</button>
       </form>
     </section>
 
