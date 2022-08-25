@@ -117,6 +117,10 @@ input:focus {
     width: 50%;
 }
 
+.date-area {
+    display: flex;
+    flex-direction: column;
+}
 .date-input {
     display: flex;
     align-items: flex-start;

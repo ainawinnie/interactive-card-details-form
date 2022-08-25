@@ -60,15 +60,18 @@
         <div class="card-number-input form-field">
           <label for="" class="card-number-label">Card Number</label>
           <input type="text" class="card-number-input" id="card-number-input" placeholder="e.g. 1234 5678 9123 0000">
-          <span class="number-error error-id hide">Wrong format, numbers only</span>
           <span class="empty-number error-id hide">Can't be blank</span>
+          <span class="number-error error-id hide">Wrong format, numbers only</span>
         </div>
         <div class="cvc-date">
           <div class="date form-field">
             <label for="" class="date-information">Exp. Date (MM/YY)</label>
-            <div class="date-input">
-              <input type="number" class="month" id="month" placeholder="MM">
-              <input type="number" class="year" id="year" placeholder="YY">  
+            <div class="date-area">
+              <div class="date-input">
+                <input type="number" class="month" id="month" placeholder="MM">
+                <input type="number" class="year" id="year" placeholder="YY"> 
+              </div>
+              <span class="date-error error-id hide">Can't be blank</span>
             </div>
             <span class="date-error error-id hide">Can't be blank</span>
           </div>
