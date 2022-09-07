@@ -82,6 +82,7 @@ function validateEmptyDateField (input) {
 }
 
 function addDateErrors (input) {
+    console.log(input)
     input.classList.add('input-error');
     input.parentNode.parentNode.children[1].classList.remove('hide');
 }
@@ -105,6 +106,7 @@ function addEventInNumberElements(element) {
 function validateNumberField (input) {
     if (!input.value || input.value.length < 1) {
         addErrors(input);
+        console.log('aqui')
     } else {
         removeErrors(input);
         if (isNaN(input)) {
