@@ -96,47 +96,57 @@ function removeEmptyDateError (input) {
 
 /*Fills the numbers on card*/
 cardNumber.addEventListener('blur', function() {
-    var aux1 = '';
-    for (var i =0; i < 4; i++){
-        aux1 = aux1 + cardNumber.value[i];
-        partOne.innerHTML = aux1;
-    }
+    if (cardNumber.value) {
+            var aux1 = '';
+        for (var i =0; i < 4; i++){
+            aux1 = aux1 + cardNumber.value[i];
+            partOne.innerHTML = aux1;
+        }
 
-    var aux2 = '';
-    for (var i =4; i < 8; i++){
-        aux2 = aux2 + cardNumber.value[i];
-        partTwo.innerHTML = aux2;
-    }
+        var aux2 = '';
+        for (var i =4; i < 8; i++){
+            aux2 = aux2 + cardNumber.value[i];
+            partTwo.innerHTML = aux2;
+        }
 
-    var aux3 = '';
-    for (var i =8; i < 12; i++){
-        aux3 = aux3 + cardNumber.value[i];
-        partThree.innerHTML = aux3;
-    }
+        var aux3 = '';
+        for (var i =8; i < 12; i++){
+            aux3 = aux3 + cardNumber.value[i];
+            partThree.innerHTML = aux3;
+        }
 
-    var aux4 = '';
-    for (var i =12; i < 16; i++){
-        aux4 = aux4 + cardNumber.value[i];
-        partFour.innerHTML = aux4;
+        var aux4 = '';
+        for (var i =12; i < 16; i++){
+            aux4 = aux4 + cardNumber.value[i];
+            partFour.innerHTML = aux4;
+        }
     }
 })
 
 /*Fills the name on card*/
 nameInput.addEventListener('blur', function(){
-    nameCard.innerHTML = nameInput.value
+    if(nameInput.value) {
+        nameCard.innerHTML = nameInput.value
+    }
 })
 
 /*Fills the date on card*/
 monthInput.addEventListener('blur', function(){
-    monthCard.innerHTML = monthInput.value
+    if (monthInput.value) {
+        monthCard.innerHTML = monthInput.value;
+    }
 })
 yearInput.addEventListener('blur', function(){
-    yearCard.innerHTML = yearInput.value
+    if(yearInput.value) {
+        yearCard.innerHTML = yearInput.value;
+    }
 })
 
 /*Fills the cvc on card*/
 cvcInput.addEventListener('blur', function(){
-    cvcCard.innerHTML = cvcInput.value
+    if (cvcInput.value) {
+        cvcCard.innerHTML = cvcInput.value;
+    }
 })
 
 /*Moves to the ending page*/
