@@ -152,7 +152,7 @@ cvcInput.addEventListener('blur', function(){
 /*Moves to the ending page*/
 
 sendButton.addEventListener ('click', function (event) {
-    event.preventDefault
+    event.preventDefault();
     if (nameInput.value && cardNumber.value && monthInput.value && yearInput.value && cvcInput ){
         formPage.classList.add('hide');
         completePage.classList.remove('hide');
